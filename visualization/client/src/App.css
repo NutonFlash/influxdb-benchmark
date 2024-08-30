@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#content-wrapper {
+  margin: 3rem;
+}
+
+.graph-header {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+label {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  width: fit-content;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: visible;
+  color: #333;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.charts-row-container {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  /* row-gap: 75px; */
+  height: 100%;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.charts-row-container > div {
+  min-width: 650px;
+  width: 45%;
+}
+
+.charts-row-container > div:last-child {
+  margin-left: 30px;
+}
+
+#mem-distrub-container {
+  display: flex;
+  justify-content: start;
+  column-gap: 10px;
+  flex: 1;
+}
+
+#mem-distrub-container > div:first-child {
+  min-width: 260px;
+  width: 340px;
+}
+
+#mem-distrub-container svg {
+  overflow: visible;
+}
+
+#mem-distrub-container .graph-header {
+  margin-bottom: 30px;
+}
+
+#mem-distrub-header-container {
+  display: flex;
+  justify-content: start;
+  column-gap: 20px;
+  align-items: top;
+}
+
+#mem-distrub-graph-container {
+  width: 400px;
+  display: felx;
+  align-self: end;
+}
+
+@media screen and (max-width: 767px) {
+  #content-wrapper {
+    margin: 1.5rem;
+  }
+  .charts-row-container > div:last-child {
+    margin-left: 0px;
+  }
+}
